@@ -1,2 +1,2 @@
-# rustplayground
+# rust-playground
 rust beginning
