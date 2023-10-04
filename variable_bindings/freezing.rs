@@ -1,3 +1,4 @@
+//当数据被相同的名称不变地绑定时，它还会冻结（freeze）。在不可变绑定超出作用域之前，无法修改已冻结的数据：
 fn main() {
     let mut _mutable_integer = 7i32;
 
