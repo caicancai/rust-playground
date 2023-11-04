@@ -1,3 +1,4 @@
+//变量绑定默认是不可变的，但加上mut修饰后变量就可以改变了
 fn main() {
     let _immutable_binding = 1;
     let mut mutable_binding = 1;
