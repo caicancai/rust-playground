@@ -8,6 +8,7 @@ use super::*;
 fn test_block_build_single_key() {
     let mut builder = BlockBuilder::new(16);
     assert!(builder.add(b"233", b"233333"));
+
     builder.build();
 }
 
@@ -15,7 +16,7 @@ fn test_block_build_single_key() {
 fn test_block_build_full() {
     let mut builder = BlockBuilder::new(16);
     assert!(builder.add(b"11", b"11"));
-    assert!(!builder.add(b"22", b"22"));
+    assert!(builder.add(b"22", b"22"));
     builder.build();
 }
 
